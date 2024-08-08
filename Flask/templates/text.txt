@@ -1,0 +1,31 @@
+<h1 class="text-center">Real Estate Price Estimator</h1>
+    <form action="/predict" method="post">
+        <label for="type">Type:</label>
+        <select name="Type" id="type">
+            <option value="Appartement">Appartement</option>
+            <option value="Villa">Villa</option>
+        </select><br><br>
+
+        <label for="localisation">Localisation:</label>
+        <input type="text" name="Localisation" id="localisation"><br><br>
+
+        <label for="area">Area (m²):</label>
+        <input type="number" name="Area" id="area" step="0.01"><br><br>
+
+        <label for="rooms">Rooms:</label>
+        <input type="number" name="Rooms" id="rooms"><br><br>
+
+        <label for="bedrooms">Bedrooms:</label>
+        <input type="number" name="Bedrooms" id="bedrooms"><br><br>
+
+        <label for="bathrooms">Bathrooms:</label>
+        <input type="number" name="Bathrooms" id="bathrooms"><br><br>
+
+        <label for="floor">Floor:</label>
+        <input type="number" name="Floor" id="floor"><br><br>
+
+        <label for="other_tags">Other Tags (comma-separated):</label>
+        <input type="text" name="Other_tags" id="other_tags"><br><br>
+
+        <button type="submit">Estimate Price</button>
+    </form>
